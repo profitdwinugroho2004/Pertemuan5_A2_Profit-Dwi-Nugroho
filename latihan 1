@@ -1,0 +1,14 @@
+#program untuk menampilkan pernyataan 1 10 2 9 3 8 4 7 5 6 6 5 7 4 8 3 9 2 10 10
+
+#membuat list angka dari 1 hingga 10
+angka = list(range(1, 11))
+
+#menggabungkan dua list secara bergantian 
+hasil = []
+for i in range(len(angka)):
+    hasil.append(angka[i])
+    hasil.append(angka[-(i+1)])
+    
+#menampilkan hasilnya
+for num in hasil:
+    print(num, end='')
