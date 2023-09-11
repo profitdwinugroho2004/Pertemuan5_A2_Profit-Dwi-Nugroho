@@ -1,0 +1,12 @@
+awal = int(input("masukan saldo awal\t:"))
+sisa = awal #bila tidak ada pengeluaran 
+while(True):
+    pengeluaran = int(input("masukan pengeluaran hari ini (-1 untuk keluar):"))
+    if pengeluaran ==-1: #untuk berhenti
+        print("sisa saldo =", sisa) #sisa bila di berhentikan
+        break
+    sisa = sisa - pengeluaran 
+    if sisa <0:
+        print("saldo tidak cukup")
+        print("sisa saldo, sisa + pengeluaran")
+        break
